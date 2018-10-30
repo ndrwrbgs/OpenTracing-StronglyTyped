@@ -3,8 +3,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>net4.5;netstandard2.0</TargetFrameworks>
-    <RootNamespace>OpenTracing.Contrib.MutableTracer</RootNamespace>
-    <AssemblyName>OpenTracing.Contrib.MutableTracer</AssemblyName>
+    <RootNamespace>OpenTracing.Contrib.StronglyTyped</RootNamespace>
+    <AssemblyName>OpenTracing.Contrib.StronglyTyped</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
