@@ -1,4 +1,4 @@
-﻿namespace OpenTracing.Contrib.MutableTracer
+﻿namespace OpenTracing.Contrib.StronglyTyped
 {
     using System.Collections.Generic;
 

@@ -1,7 +1,5 @@
-﻿namespace OpenTracing.Contrib.MutableTracer
+﻿namespace OpenTracing.Contrib.StronglyTyped
 {
-    using System;
-
     public abstract class StronglyTypedScope<TSpan> : IScope
         where TSpan : ISpan
     {

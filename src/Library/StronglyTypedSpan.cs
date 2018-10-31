@@ -1,4 +1,4 @@
-﻿namespace OpenTracing.Contrib.MutableTracer
+﻿namespace OpenTracing.Contrib.StronglyTyped
 {
     using System;
     using System.Collections.Generic;
@@ -97,7 +97,6 @@
             return this.SetOperationName(operationName);
         }
         
-
         ISpanContext ISpan.Context => this.Context;
     }
 }

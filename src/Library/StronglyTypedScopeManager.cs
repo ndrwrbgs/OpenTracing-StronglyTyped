@@ -1,4 +1,4 @@
-﻿namespace OpenTracing.Contrib.MutableTracer
+﻿namespace OpenTracing.Contrib.StronglyTyped
 {
     public abstract class StronglyTypedScopeManager<TScope, TSpan> : IScopeManager
         where TScope : IScope

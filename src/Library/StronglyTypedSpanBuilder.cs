@@ -1,4 +1,4 @@
-﻿namespace OpenTracing.Contrib.MutableTracer
+﻿namespace OpenTracing.Contrib.StronglyTyped
 {
     using System;
     using OpenTracing.Tag;
@@ -10,35 +10,20 @@
         where TScope : IScope
     {
         public abstract TThis AsChildOf(TSpanContext parent);
-
         public abstract TThis AsChildOf(TSpan parent);
-
         public abstract TThis AddReference(string referenceType, TSpanContext referencedContext);
-
         public abstract TThis IgnoreActiveSpan();
-
         public abstract TThis WithTag(string key, string value);
-
         public abstract TThis WithTag(string key, bool value);
-
         public abstract TThis WithTag(string key, int value);
-
         public abstract TThis WithTag(string key, double value);
-
         public abstract TThis WithTag(BooleanTag tag, bool value);
-
         public abstract TThis WithTag(IntOrStringTag tag, string value);
-
         public abstract TThis WithTag(IntTag tag, int value);
-
         public abstract TThis WithTag(StringTag tag, string value);
-
         public abstract TThis WithStartTimestamp(DateTimeOffset timestamp);
-
         public abstract TScope StartActive();
-
         public abstract TScope StartActive(bool finishSpanOnDispose);
-
         public abstract TSpan Start();
 
         ISpanBuilder ISpanBuilder.AsChildOf(ISpanContext parent)
